@@ -1,0 +1,131 @@
+*{
+	text-decoration: none;
+	list-style: none;
+	font-family: poppins;
+	padding: 0;
+	margin: 0;
+    
+}
+
+.event-container{
+	margin: 1rem;
+    width: 50%;
+	border: solid darkgray;
+	border-radius: 0.5rem;
+}
+.event-image img{
+    width: 100%;
+	height: 40rem;
+	padding: 1rem ;
+	border-radius: 2rem;
+	display: block;
+}
+.event-container a{
+	margin: 1rem;
+	padding: 0.1rem;
+	font-size: 1.5rem;
+	border: ridge darkgray;
+	border-radius: 0.5rem;
+	display: inline-block;
+}
+.event-container a:hover{
+	color: goldenrod;
+	transition: 0.3s;
+
+}
+h3{
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.5rem;
+}
+body .events {
+    justify-content: center;
+    align-content: center;
+	flex-wrap: wrap;
+}
+
+@media (max-width:600px) {
+	.wrapper-nav {
+		height: 10vh;
+		z-index: 1000;	
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav img {
+		height: 30px;
+		margin-left: 5px;
+		margin-top: 30px;
+		padding-inline: 10px;
+	}
+	ul.mainMenu{
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #131515;
+		transition: top 1s ease;
+		display: none;
+	}
+	.closeMenu{
+		display: inline;
+		position: absolute;
+		top: 20px;
+		right: 30px;
+	}
+	.openMenu{
+		display: inline;
+		margin-right: 20px;
+	
+	}
+	.openMenu :hover{
+		color: goldenrod;
+		transition: 0.25s ease-in-out;
+	
+	}
+	.closeMenu:hover{
+		color: goldenrod;
+		transition: 0.25s ease-in-out;
+	
+	}
+	ul.mainMenu li a:hover{
+		background: none;
+		color: goldenrod;
+		font-size: 1.5rem;
+		transition: 0.25s ease-in-out;
+	}
+	.event-container{
+		margin-top: 0.3rem;
+		margin-bottom: 0.5rem;
+		padding: 0;
+		width: 90%;
+		border: solid darkgray;
+		border-radius: 0.5rem;
+	}
+	.event-image img{
+		width: 95%;
+		height: 20rem;
+		padding: 1rem ;
+		border-radius: 2rem;
+		display: block;
+	}
+	body .events {
+		justify-content: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+	h3{
+		font-size: 0.85rem;
+	}
+	h4{
+		font-size: 0.7rem;
+	}
+	
+
+}

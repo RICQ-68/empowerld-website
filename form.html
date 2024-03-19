@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission 105</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="contact-form">
+        <div class="container">
+            <div class="content">
+             
+                <div class="right-side">
+                    <center><div class="topic-text">Send us a message</div></center>
+                    <p>If you have any inquiries regarding financial and leadership empowerment, EMPOWER-LD and our services, you can send us a message and we will ensure to get back to you. </p>
+                            
+                    <form>
+                        <div class="input-box">
+                            <label for="Name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="Email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="input-box">
+                            <label for="Subject">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="Type Subject here.." required>
+                        </div>
+                        <div class="message-box">
+                            <label for="Message">Message</label>
+                            <textarea name="message" id="message" placeholder="Type message here..."></textarea>
+                        </div>
+                        <div class="button">
+                            <center><button class="submit" onclick="sendMail();" value="SUBMIT">SUBMIT</button></center>
+                        </div>
+                    </form>
+                        
+            </div>
+        </div>
+        </div>
+    </section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "empowerleadershipdev@gmail.com",
+        Password : "dhwbbvrfdqggakht",
+        To : "empowerleadershipdev@gmail.com",
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Entry",
+        Body : "Name: " + document.getElementById("name").value
+                +"<br> Email: " + document.getElementById("email").value
+                +"<br> Subject: " + document.getElementById("subject").value
+                +"<br> Message: " + document.getElementById("message").value
+
+}).then(
+  message => alert("Message Sent Successfully!")
+);
+    }
+</script>
+</body>
+</html>

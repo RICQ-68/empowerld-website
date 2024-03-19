@@ -1,0 +1,243 @@
+*{
+	text-decoration: none;
+	list-style: none;
+	font-family: poppins;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.wrapper-nav {
+	width: 100%;
+	height: 15vh;
+	z-index: 1000;	
+	padding: 0;
+	margin: 0;
+}
+nav img {
+	height: 9vh;
+	margin:2vh 0 2vh 2vh;
+}
+nav {
+	background: #131515;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+ul.mainMenu {
+    display: flex;
+    list-style: none;
+}
+ul.mainMenu li {
+    display: inline;
+    list-style: none;
+	line-height: 15vh;
+}
+ul.mainMenu li a{
+    display: inline;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+	font-size: 1rem;
+	line-height: 12vh;
+
+}
+ul.mainMenu li a:hover{
+   color: goldenrod;
+   transition: 0.3s ease-in-out;
+   font-size: 1.2rem;
+}
+.openMenu{
+	font-size: 2rem;
+	margin: 20px;
+	display: none;
+	cursor: pointer;
+}
+.closeMenu{
+	font-size: 2rem;
+	margin: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+.about{
+	background-color: bisque;
+}
+.about h3{
+	margin: 0 1rem 0 1rem;
+	font-size: 1.25rem;
+
+}
+
+h1:nth-child(3){
+	color: red;
+	font-size: 3rem;
+	line-height: 5rem;
+}
+/*footer*/
+
+.footer-container{
+	height: 10rem;
+	width: 100%;
+	background-color: black;
+	font-family: poppins;
+	padding-top: 1rem;	
+}
+
+.social-icons{
+	/* font-size: 2rem; */
+	display: flex;
+	justify-content: center;
+}
+.social-icons a{
+	text-decoration: none;
+	padding: 0.5%;
+	background-color: white;
+	margin: 1rem;
+	border-radius: 50%;
+	display: flex;
+	color: black;
+}
+.social-icons i{
+	font-size: 1.8rem;
+	color: black;
+}
+
+
+.fa-brands.fa-facebook:hover{
+	color: mediumblue;
+	transition: 0.1s;
+}
+.fa-brands.fa-instagram:hover{
+	color: #E1306C;
+	transition: 0.1s;
+
+}
+.fa-solid.fa-envelope:hover{
+	color: maroon;
+	transition: 0.1s;
+
+}
+.fa-brands.fa-whatsapp:hover{
+	color: limegreen;
+	transition: 0.1s;
+
+}
+
+.footer-nav{
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.footer-nav ul{
+	display: inline-flex;
+	justify-content: center;
+	margin-top: 1rem;	
+}
+
+.footer-nav ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 1rem;
+	font-size: 1rem;
+	opacity: 0.4;
+	transition: 0.2s;
+}
+
+.footer-nav ul li a:hover{
+	opacity:1 ;
+	color: white;
+}
+
+.footer-bottom{
+	background-color: black;
+	padding: 2rem;
+	text-align: center;
+	justify-content: center;
+
+}
+.footer-bottom p{
+	color: white;
+	line-height: 1.3;
+	opacity: 0.8;	
+	font-size: 1rem;
+}
+
+	@media (max-width:600px) {
+		/* burger menu icon */
+		nav img {
+			height: 30px;
+			margin-left: 5px;
+			margin-top: 30px;
+			padding-inline: 10px;
+		}
+		ul.mainMenu{
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 10;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: #131515;
+			transition: top 1s ease;
+			display: none;
+		}
+		.closeMenu{
+			display: block;
+			position: absolute;
+			top: 20px;
+			right: 30px;
+		}
+		.openMenu{
+			display: block;
+			margin-right: 20px;
+		
+		}
+		.openMenu :hover{
+			color: goldenrod;
+			transition: 0.25s ease-in-out;
+		
+		}
+		.closeMenu:hover{
+			color: goldenrod;
+			transition: 0.25s ease-in-out;
+		
+		}
+		ul.mainMenu li a:hover{
+			background: none;
+			color: goldenrod;
+			font-size: 1.5rem;
+			transition: 0.25s ease-in-out;
+		}
+		/* burger menu-stop */
+		.about{
+			background-color: bisque;
+			margin: 0;
+			padding: 0;
+		}
+		h2{
+			color: red;
+			font-size: 1.3rem;
+		}
+		.about h3{
+			font-size: 1.2rem;
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			font-size: 1.8rem;
+			margin: 0;
+			padding: 0;
+		}
+		.footer-nav ul li a{
+			margin: 0.6rem;
+		}
+		.social-icons a{
+				padding: 0.5rem;
+				margin: 0.5rem;
+			}
+	}
