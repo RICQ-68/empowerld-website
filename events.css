@@ -110,8 +110,8 @@ body .events {
 		border-radius: 0.5rem;
 	}
 	.event-image img{
-		width: 95%;
-		height: 20rem;
+		width: 100%;
+		height: 100%;
 		padding: 1rem ;
 		border-radius: 2rem;
 		display: block;
