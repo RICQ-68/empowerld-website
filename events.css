@@ -128,6 +128,13 @@ body .events {
 		font-size: 0.7rem;
 		font-weight: 350 ;
 	}
-	
+	.social-icons i{
+		font-size:1.5rem;
+	}
+	.social-icons a{
+		font-size: small;
+		padding: 0.35rem;
+		margin: 0.8rem;
+	}
 
 }
