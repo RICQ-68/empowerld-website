@@ -28,8 +28,8 @@ nav {
 	padding: 0;
 	margin: 0;
 	height: 15vh;
-
 }
+
 ul.mainMenu {
     display: flex;
     list-style: none;
@@ -46,7 +46,6 @@ ul.mainMenu li a{
     color: #fff;
 	font-size: 1rem;
 	line-height: 12vh;
-
 }
 ul.mainMenu li a:hover{
    color: goldenrod;
@@ -675,23 +674,23 @@ ul.mainMenu li a:hover{
 		margin: 0;
 	
 	}
-	.About {
-		width: 100%;
-		background-color: lightgrey;
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-	
-	}
-	.About-cover img {
-		width: 100%;
-		display: flex;
-		opacity:0.75;
-		border-radius: 0;
-	}
-	.About-cover {
-		margin: 0;
-	}
+		.About {
+			width: 100%;
+			background-color: lightgrey;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		
+		}
+		.About-cover img {
+			width: 100%;
+			display: flex;
+			opacity:0.75;
+			border-radius: 0;
+		}
+		.About-cover {
+			margin: 0;
+		}
 	
 	.About-text {
 		margin: 0;
@@ -830,4 +829,120 @@ ul.mainMenu li a:hover{
 		padding: 0.35rem;
 		margin: 0.8rem;
 	}
+}
+
+@media(min-width:601px) and (max-width:1023px){
+	.wrapper-nav {
+		height: 12vh;
+	}
+	ul.mainMenu li {
+		line-height: 12vh;
+	}
+	ul.mainMenu li a{
+		padding: 10px;
+		font-size: 0.9rem;
+		line-height: 12vh;
+	}
+	nav {
+		height: 12vh;
+	}
+	nav img {
+		height: 5.5vh;
+		margin:3vh 0 2vh 1vh;
+	}
+	.overlay {
+		width: 100%;
+		height: 31rem;
+		background: linear-gradient(rgba(26, 25, 25, 0.753),rgba(31, 30, 30, 0.767));
+		position: absolute;
+		margin-top: 20%;
+		top: 0;
+	
+	}
+		
+	.hero-section{
+		background-color: white;
+	}
+
+	.hero-section h1{
+		padding-top: 2rem;
+	}
+
+	.About {
+		width: 100%;
+		background-color: lightgrey;
+		flex-wrap: wrap;
+	
+	}
+	.About-cover img {
+		width: 100%;
+		display: flex;
+		opacity:0.75;
+		border-radius: 0;
+	}
+	.About-cover {
+		margin: 0;
+	}
+	.service-container{
+		width: 90%;
+		height: 100%;
+		margin: 1rem;	
+		font-size: 2rem;
+		position: relative;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-radius: 1rem;
+		border: solid darkgray;
+		border-width: 2px;
+	}
+	.services img{
+		width: 90%;
+		height: 100%;
+		border-radius: 1rem;
+		padding: 0;
+		margin: 0;
+		size: cover;
+		opacity: 0.8;
+	}
+	.contact-form{
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+		background-color: darkgrey;
+	}
+	
+	.container{
+		width: 100%;
+		max-height: 50rem;
+	}
+
+	label{
+		font-size: 0.75rem;
+	}
+	.topic-text{
+		font-size: 1.5rem;
+	}
+	input{
+		height: 2rem;
+		font-size: 0.8rem;
+	}
+	textarea{
+		font-size: 0.8rem;
+		width: 100%;
+		height: 5rem;
+		border: ridge;
+		border-radius: 0.5rem;
+		background-color: #f0f1f8;
+		resize: none;
+	}
+
+	.social-icons i{
+		font-size: 2rem;
+		padding: 0.3rem;
+
+	}
+
+
+
 }

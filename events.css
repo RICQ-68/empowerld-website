@@ -137,4 +137,20 @@ body .events {
 		margin: 0.8rem;
 	}
 
+
 }
+@media (min-width:601px) and (max-width:1023px){
+	.event-container{
+		margin: 1rem;
+		width: 90%;
+		/* height: 100%; */
+		border: solid darkgray;
+		border-radius: 0.5rem;
+	}
+	h4{
+		font-size: 1rem;
+		font-weight: 500 ;
+	}
+}
+
+	
