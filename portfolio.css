@@ -1,0 +1,282 @@
+* {
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+    
+}
+
+.logo h1{
+    line-height: 15vh;
+    margin-left: 8rem;
+    color: aliceblue;
+}
+
+.home{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgb(175, 136, 165), rgb(28, 28, 82));
+    padding: 0 10%;
+}
+.home-content h1{
+    color: aliceblue;
+    font-size: 2.4rem;
+}
+.home-content h2{
+    color: #021d25;
+    margin-bottom: 1rem;
+}
+.home-content p{
+    color: aliceblue;
+    justify-content: center;
+}
+.home-content {
+    /* background-color: yellowgreen; */
+    max-width: 600px;
+}
+.btn-box{
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.btn-box a{
+    width: 16rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-flex;
+    border: 2px solid #00abf0;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #00abf0;
+    justify-content: center;
+    align-items: center;
+    color:#0c171d;
+}
+.btn-box a:hover{
+    background: #0c171d;
+    color: #00abf0;
+    transition: 0.3s;
+}
+.profile-pic img{
+    float: right;
+    height: 38rem;
+    opacity: 0.75;
+    margin: 1rem 0;
+    padding-bottom: 0.1rem;
+}
+.experience-bar{
+    background-color: #071218;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.XP-bar {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    column-gap: 20px ;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.XP-2{
+    justify-content: center;
+    align-items: center;
+}
+.XP-bar h1{
+    padding: 0%;
+    margin: 0;
+    font-size: 7rem;
+    color: aliceblue;
+}
+.XP-bar h4{
+    font-size: 1.3rem;
+    color: aliceblue;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+.about-me{
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+.about-me p{
+    font-size: 1.2rem;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+.my-services{
+    background: #eef1f1;
+    /* width: 100%; */
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    justify-content: space-evenly;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* gap: 2rem; */
+}
+
+
+.my-services h3{
+    font-weight: 600;
+}
+
+.my-services h4{
+    font-weight: 400;
+}
+
+.Financial-Management{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    float: right;
+}
+.Business-Consulting{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    height: fit-content;
+}
+.Entrepreneurship{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    height: fit-content;
+    justify-content: center;
+}
+.booking-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: rgb(120, 128, 105); */
+    padding: 0;
+    margin: 0;
+}
+.booking-area h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+.booking-area .btn-box{
+    padding: 1rem;
+    width: 30rem;
+    justify-content: space-between;
+    align-self: center;
+}
+.booking-area .btn-box a{
+    width: 13rem;
+    padding: 1.5rem 0 1.5rem 0;
+    font-size: 1.6rem;
+    margin-top: 0rem;
+}
+.booking-area .btn-box a:hover{
+   background: transparent;
+}
+.reviews-sct{
+    margin: 1rem;
+    /* background-color: yellowgreen; */
+}
+.reviews-sct h1{
+    /* display: flex; */
+    font-weight: 400;
+    margin: 2rem;
+    justify-content: center;
+}
+.reviews{
+    display: flex;
+    margin: 2rem;
+    background-color: rgb(192, 182, 194);
+    padding:  2rem;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    column-gap: 3rem;
+    flex-basis: 40%;
+    border-radius: 5px;
+}
+.reviews img{
+   width: 8rem;
+   border-radius: 50%;
+   margin: 2rem;
+}
+
+.reviews p{
+   font-size: 0.9rem;
+   font-weight: 400;
+ }
+
+.container{
+    height: 100vh;
+    width: 90%;
+    background-color: #071218;
+}
+.content h1{
+    color: aliceblue;
+    margin-bottom: 2.5rem;
+    font-size: 3.5rem;
+}
+.text-one a,.text a{
+    color: #e7ecee;
+}
+.text-one a:hover{
+    font-size: 1.1rem;
+    transition: 0.5s;
+    color: #e7ecee;
+}
+.text a:hover{
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+.topic{
+    color: #00abf0;
+}
+.fa-solid.fa-envelope,.fa-solid.fa-phone{
+	color: rgb(228, 201, 201);
+}
+.right-side p{
+    color: #c0dae4;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+label{
+    color: #f2f6f8;
+    font-size: 1rem;
+}
+input,textarea{
+    font-size: 1rem;
+}
+::placeholder{
+    color: #07253b;
+    font-size: 1rem;
+}
+.button button{
+    background-color: #00abf0;
+    color: #071218;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.button button:hover{
+    background-color: white;
+    color: #00abf0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
