@@ -52,8 +52,8 @@ ul.mainMenu li a:hover{
    transition: 0.3s ease-in-out;
    font-size: 1.2rem;
 	display: inline;
-
 }
+
 .openMenu{
 	font-size: 2rem;
 	margin: 20px;
@@ -211,7 +211,7 @@ ul.mainMenu li a:hover{
 	padding: 0;
 	margin: 0;
 	border-radius: 10px; 
-	opacity: 0.8;
+	opacity: 0.9;
 	float: left;
 }
 .About-cover img:hover  {
@@ -683,10 +683,7 @@ ul.mainMenu li a:hover{
 		
 		}
 		.About-cover img {
-			width: 100%;
-			display: flex;
-			opacity:0.75;
-			border-radius: 0;
+			display: none;
 		}
 		.About-cover {
 			margin: 0;
@@ -855,7 +852,7 @@ ul.mainMenu li a:hover{
 		height: 31rem;
 		background: linear-gradient(rgba(26, 25, 25, 0.753),rgba(31, 30, 30, 0.767));
 		position: absolute;
-		margin-top: 20%;
+		margin-top: 9rem;
 		top: 0;
 	
 	}
@@ -875,10 +872,7 @@ ul.mainMenu li a:hover{
 	
 	}
 	.About-cover img {
-		width: 100%;
-		display: flex;
-		opacity:0.75;
-		border-radius: 0;
+		display: none;
 	}
 	.About-cover {
 		margin: 0;
