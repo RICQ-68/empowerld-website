@@ -18,7 +18,7 @@ nav img {
 	margin:2vh 0 2vh 2vh;
 }
 nav {
-	background: #131515;
+	background: linear-gradient(rgb(39, 26, 46),rgb(27, 63, 68));
     color: white;
     display: flex;
     justify-content: space-between;
@@ -60,17 +60,30 @@ ul.mainMenu li a:hover{
 	display: none;
 	cursor: pointer;
 }
-
-.about{
-	background-color: bisque;
+.about {
+	position: relative;
+}
+.about::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(Applause.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+	z-index: -1;
 }
 .about h3{
 	margin: 0 1rem 0 1rem;
 	font-size: 1.25rem;
-
 }
-
-h1:nth-child(3){
+.about h1{
+	font-size: 2rem;
+}
+.about h2{
 	color: red;
 	font-size: 3rem;
 	line-height: 5rem;
@@ -78,9 +91,9 @@ h1:nth-child(3){
 /*footer*/
 
 .footer-container{
-	height: 10rem;
+	height: 14rem;
 	width: 100%;
-	background-color: black;
+	background: linear-gradient(rgb(27, 63, 68),rgb(39, 26, 46));
 	font-family: poppins;
 	padding-top: 1rem;	
 }
@@ -99,31 +112,6 @@ h1:nth-child(3){
 	display: flex;
 	color: black;
 }
-.social-icons i{
-	font-size: 1.8rem;
-	color: black;
-}
-
-
-.fa-brands.fa-facebook:hover{
-	color: mediumblue;
-	transition: 0.1s;
-}
-.fa-brands.fa-instagram:hover{
-	color: #E1306C;
-	transition: 0.1s;
-
-}
-.fa-solid.fa-envelope:hover{
-	color: maroon;
-	transition: 0.1s;
-
-}
-.fa-brands.fa-whatsapp:hover{
-	color: limegreen;
-	transition: 0.1s;
-
-}
 
 .footer-nav{
 	flex-wrap: wrap;
@@ -141,7 +129,7 @@ h1:nth-child(3){
 	text-decoration: none;
 	margin: 1rem;
 	font-size: 1rem;
-	opacity: 0.4;
+	opacity: 0.7;
 	transition: 0.2s;
 }
 
@@ -151,21 +139,26 @@ h1:nth-child(3){
 }
 
 .footer-bottom{
-	background-color: black;
-	padding: 2rem;
+	padding-top: 1.5rem;
 	text-align: center;
 	justify-content: center;
-
 }
 .footer-bottom p{
 	color: white;
-	line-height: 1.3;
-	opacity: 0.8;	
 	font-size: 1rem;
 }
 
 	@media (max-width:600px) {
 		/* burger menu icon */
+		.wrapper-nav {
+			height: 10vh;
+			z-index: 1000;	
+			padding: 0;
+			margin: 0;
+		}
+		.wrapper-nav nav{
+			height: 10vh;
+		}
 		nav img {
 			height: 30px;
 			margin-left: 5px;
@@ -214,10 +207,21 @@ h1:nth-child(3){
 			transition: 0.25s ease-in-out;
 		}
 		/* burger menu-stop */
-		.about{
-			background-color: bisque;
-			margin: 0;
-			padding: 0;
+		.about {
+			position: relative;
+		}
+		.about::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(Applause.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.7;
+			z-index: -1;
 		}
 		h2{
 			color: red;
