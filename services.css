@@ -127,23 +127,24 @@ ul.mainMenu li a:hover{
 	margin: 0;
 	padding: 0;
 }
-.programs:hover {
-	background-color: goldenrod;
-	color: white;
-	transition: 0.3s ease-out;
-	font-size: 0.95rem;
-}
-.programs {
+.programs a:hover {
+	background-color: rgba(218, 165, 32, 0.788);
+	color: gold;
+	transition: 0.1s ease-out;
 	font-size: 0.9rem;
-	padding: 0.1rem;
+	padding: 0.2rem;
+	margin-top: 0;
+	border-radius: 0.3rem;
+}
+
+.programs a {
+	font-size: 0.9rem;
+	padding: 0.2rem;
 	margin-top: 0;
 	color: #fff;
-	border-radius: 0.5rem;
-	background-color: #3e2093;
+	border-radius: 0.3rem;
+	background: linear-gradient(rgb(39, 26, 46),rgb(27, 63, 68));
 	
-}
-.programs a {
-	color: white;
 }
 
 /*footer*/
